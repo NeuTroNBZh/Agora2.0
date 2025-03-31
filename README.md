@@ -80,8 +80,8 @@ Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant de
 
 1. Clonez ce dépôt
 ```bash
-git clone https://github.com/votre-username/cs2-retake-site.git
-cd cs2-retake-site
+git clone https://github.com/NeuTroNBZh/Agora2.0.git
+cd Agora2.0
 ```
 
 2. Ajoutez toutes les images requises dans le dossier `images/`
