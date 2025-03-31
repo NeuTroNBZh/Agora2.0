@@ -4,7 +4,7 @@ Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant de
 
 ## 🚀 Démo
 
-[Voir la démo en ligne](https://agora-retake.site)
+[Voir la démo en ligne](https://agora-retake.fr)
 
 ## 📋 Table des matières
 
