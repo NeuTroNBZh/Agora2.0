@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /php/
+Disallow: /php/phpinfo.php
+Sitemap: https://agora2.0.fr/sitemap.xml 

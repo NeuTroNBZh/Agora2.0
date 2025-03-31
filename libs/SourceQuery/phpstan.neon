@@ -1,0 +1,20 @@
+includes:
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+parameters:
+	checkFunctionNameCase: true
+	level: max
+	paths:
+		- .
+	excludePaths:
+		- vendor
+	strictRules:
+		booleansInConditions: false
+		disallowedConstructs: false
+	ignoreErrors:
+		-
+			identifier: missingType.iterableValue
+
+		-
+			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
+			count: 1
+			path: SourceQuery/SourceQuery.php

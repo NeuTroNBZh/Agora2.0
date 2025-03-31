@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora Retake - Serveur CS2 Retake | Le Meilleur Serveur Retake de France</title>
+    
+    <!-- Preload des ressources critiques -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="images/logos/logo.webp" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+    
+    <!-- Preconnect aux domaines externes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://discord.com">
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Agora Retake - Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
+    <meta name="keywords" content="CS2, Counter-Strike 2, Retake, Agora Retake, serveur CS2, gaming, skin changer CS2, serveur français CS2, retake CS2">
+    <meta name="author" content="AHNO">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="7 days">
+    <meta name="generator" content="HTML5">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agora-retake.fr/">
+    <meta property="og:title" content="Agora Retake - Serveur CS2 Retake | Le Meilleur Serveur Retake de France">
+    <meta property="og:description" content="Agora Retake - Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
+    <meta property="og:image" content="https://agora-retake.fr/images/logos/logo.webp">
+    <meta property="og:site_name" content="Agora Retake">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://agora-retake.fr/">
+    <meta name="twitter:title" content="Agora Retake - Serveur CS2 Retake | Le Meilleur Serveur Retake de France">
+    <meta name="twitter:description" content="Agora Retake - Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
+    <meta name="twitter:image" content="https://agora-retake.fr/images/logos/logo.webp">
+    <meta name="twitter:creator" content="@AHNO_fr">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agora-retake.fr/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/logos/logo.webp">
+    
+    <!-- Font Awesome (chargé de manière asynchrone) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    
+    <!-- Fallback pour Font Awesome -->
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </noscript>
+    
+    <!-- Fallback pour Google Fonts -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    </noscript>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://agora-retake.fr">
+                    <img src="images/logos/logo.webp" alt="Agora Retake Logo" loading="lazy" width="60" height="60">
+                </a>
+            </div>
+            <button class="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#serveur">Serveur</a></li>
+                <li><a href="#discord">Discord</a></li>
+                <li><a href="#streamers">Streamers</a></li>
+                <li><a href="#skin-changer">Skin Changer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <h1>Bienvenue sur CS2 Retake</h1>
+            <p>Le meilleur serveur Retake de Counter-Strike 2</p>
+            <div class="cta-buttons">
+                <a href="https://skin-changer.agora-retake.fr" class="btn primary">Skin Changer</a>
+                <a href="https://discord.gg/uqDBpmRE3m" class="btn secondary" target="_blank" rel="noopener noreferrer">Rejoindre Discord</a>
+            </div>
+        </section>
+
+        <section id="serveur" class="server-info">
+            <h2>Notre Serveur</h2>
+            <div class="server-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Joueurs en ligne</h3>
+                    <p id="playerCount">Chargement...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Serveur actif</h3>
+                    <p>1/1</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Anti-Cheat</h3>
+                    <p>VAC Secure</p>
+                </div>
+            </div>
+            <div class="server-connect">
+                <button onclick="copyConnectCommand()" class="btn primary">
+                    <i class="fas fa-gamepad"></i> Rejoindre le Serveur
+                </button>
+                <button onclick="copyConnectCommand()" class="btn secondary">
+                    <i class="fas fa-copy"></i> Copier la Commande
+                </button>
+            </div>
+            <div class="server-command">
+                <p>Commande console : <code id="connectCommand">connect 79.127.196.41:25251;password agora</code></p>
+            </div>
+        </section>
+
+        <section class="discord-section">
+            <h2>Notre Communauté</h2>
+            <div class="discord-content">
+                <div class="discord-info">
+                    <p>Rejoignez notre communauté Discord pour rester connecté avec les autres joueurs, participer aux événements et recevoir les dernières actualités !</p>
+                    <ul class="discord-features">
+                        <li><i class="fas fa-users"></i> Communauté active et bienveillante</li>
+                        <li><i class="fas fa-bullhorn"></i> Annonces en temps réel</li>
+                        <li><i class="fas fa-gamepad"></i> Organisation d'événements</li>
+                        <li><i class="fas fa-gift"></i> Giveaways réguliers</li>
+                        <li><i class="fas fa-headset"></i> Support technique</li>
+                    </ul>
+                    <a href="https://discord.gg/uqDBpmRE3m" target="_blank" class="discord-join-btn">
+                        <i class="fab fa-discord"></i>
+                        Rejoindre le serveur Discord
+                    </a>
+                </div>
+                <div class="discord-widget">
+                    <iframe 
+                        src="https://discord.com/widget?id=1254007638161752177&theme=dark" 
+                        allowtransparency="true" 
+                        frameborder="0"
+                        title="Widget Discord de la communauté Agora Retake"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="streamers" class="streamers-section">
+            <h2>Nos Streamers</h2>
+            <div class="featured-streamer">
+                <div class="featured-streamer-content">
+                    <div class="featured-streamer-info">
+                        <img src="images/streamers/ahno.webp" alt="AHNO YouTube" class="featured-avatar" width="150" height="150" loading="lazy">
+                        <div class="featured-streamer-text">
+                            <h3>AHNO</h3>
+                            <p class="featured-description">Créateur du serveur Discord et YouTubeur</p>
+                            <div class="featured-stats">
+                                <span><i class="fas fa-users"></i> 3K+ Abonnés</span>
+                                <span><i class="fas fa-video"></i> 90+ Vidéos</span>
+                            </div>
+                            <a href="https://www.youtube.com/@AHNO-fr" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-youtube"></i> S'abonner sur YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="latest-video">
+                        <h4>Dernière Vidéo</h4>
+                        <div id="latestVideoContainer" class="video-container">
+                            <div class="youtube-placeholder">
+                                <div class="loading">Chargement de la dernière vidéo...</div>
+                                <div class="youtube-thumbnail">
+                                    <img src="images/thumbnails/video-thumbnail.jpg" alt="Miniature de la dernière vidéo" loading="lazy">
+                                    <button class="play-button" aria-label="Lire la vidéo">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="other-streamers">
+                <h3>Autres Streamers</h3>
+                <div class="streamers-grid">
+                    <div class="streamer-card">
+                        <img src="images/streamers/neutronbzh.webp" alt="NeuTroNBZh Twitch" width="120" height="120" loading="lazy">
+                        <h3>NeuTroNBZh</h3>
+                        <a href="https://www.twitch.tv/neutronbzh" class="btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitch"></i> Suivre sur Twitch
+                        </a>
+                    </div>
+                    <div class="streamer-card">
+                        <img src="images/streamers/nvsshcs.webp" alt="nvsshcs Twitch" width="120" height="120" loading="lazy">
+                        <h3>nvsshcs</h3>
+                        <a href="https://www.twitch.tv/nvsshcs" class="btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitch"></i> Suivre sur Twitch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skin-changer" class="skin-changer-section">
+            <div class="skin-changer-content">
+                <div class="skin-changer-text">
+                    <h2>Skin Changer</h2>
+                    <p>Personnalisez votre expérience CS2 avec notre Skin Changer intégré</p>
+                    <ul class="skin-features">
+                        <li><i class="fas fa-check"></i> Plus de 1000 skins disponibles</li>
+                        <li><i class="fas fa-check"></i> Interface intuitive</li>
+                        <li><i class="fas fa-check"></i> Mise à jour régulière</li>
+                    </ul>
+                    <a href="https://skin-changer.agora-retake.fr" class="btn primary">
+                        <i class="fas fa-paint-brush"></i> Accéder au Skin Changer
+                    </a>
+                </div>
+                <div class="skin-changer-preview">
+                    <img src="images/skins/skin-preview.webp" alt="Aperçu du Skin Changer" width="600" height="400" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos d'Agora Retake</h3>
+                <p>Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences !</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#serveur">Serveur</a></li>
+                    <li><a href="#discord">Discord</a></li>
+                    <li><a href="#streamers">Streamers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="https://discord.gg/uqDBpmRE3m" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-discord"></i>
+                        <span>Rejoindre notre Discord</span>
+                    </a>
+                    <a href="https://www.twitch.tv/ahno_fr" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitch"></i>
+                        <span>Suivre sur Twitch</span>
+                    </a>
+                    <a href="https://www.youtube.com/@AHNO-fr" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                        <span>S'abonner sur YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Agora-Retake. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts chargés de manière asynchrone -->
+    <script src="js/main.js" defer></script>
+</body>
+</html> 

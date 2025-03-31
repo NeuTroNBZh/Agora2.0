@@ -1,0 +1,21 @@
+{
+    "name": "Agora Retake - Serveur CS2",
+    "short_name": "Agora Retake",
+    "description": "Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences !",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1f2937",
+    "theme_color": "#ff4655",
+    "icons": [
+        {
+            "src": "images/logos/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logos/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+} 
