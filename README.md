@@ -1,3 +1,4 @@
+
 # CS2 Retake - Site Vitrine
 
 Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant des fonctionnalités pour le Skin Changer, la communauté Discord et les streamers associés.
@@ -14,7 +15,10 @@ Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant de
 - [Installation](#installation)
 - [Fonctionnalités](#fonctionnalités)
 - [Technologies Utilisées](#technologies-utilisées)
+- [Crédits & Ressources Utilisées](#crédits--ressources-utilisées)
 - [Support](#support)
+- [Licence](#licence)
+- [Contribution](#contribution)
 
 ## Structure du Projet
 
@@ -113,6 +117,16 @@ cd Agora2.0
 - JavaScript (vanilla)
 - Font Awesome pour les icônes
 
+## 📦 Crédits & Ressources Utilisées
+
+Ce projet utilise et intègre des ressources issues de deux autres dépôts GitHub, que nous remercions chaleureusement :
+
+- [**CS2-WeaponPaints-Website**](https://github.com/LielXD/CS2-WeaponPaints-Website) par [LielXD](https://github.com/LielXD) :
+  Ce site fournit l’interface web permettant aux joueurs de personnaliser les skins de leurs armes CS2. Il sert de base à la section Skin Changer de ce projet.
+
+- [**cs2-WeaponPaints**](https://github.com/Nereziel/cs2-WeaponPaints) par [Nereziel](https://github.com/Nereziel) :
+  Ce plugin permet l'application des skins personnalisés directement dans CS2. Le projet web de LielXD utilise ce plugin, et nous avons repris cette intégration dans notre propre site vitrine.
+
 ## Support
 
 Pour toute question ou problème, veuillez ouvrir une issue dans ce dépôt.
@@ -128,4 +142,4 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
 3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request 
+5. Ouvrir une Pull Request
