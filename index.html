@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agora Retake - Serveur CS2 Retake | Le Meilleur Serveur Retake de France</title>
+    <title>Agora Retake - Le Meilleur Serveur CS2 Retake de France | Serveur d'AHNO</title>
     
     <!-- Preload des ressources critiques -->
     <link rel="preload" href="css/style.css" as="style">
@@ -15,10 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.youtube.com">
     <link rel="preconnect" href="https://discord.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://steamcommunity.com">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Meta tags SEO -->
-    <meta name="description" content="Agora Retake - Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
-    <meta name="keywords" content="CS2, Counter-Strike 2, Retake, Agora Retake, serveur CS2, gaming, skin changer CS2, serveur français CS2, retake CS2">
+    <meta name="description" content="Agora Retake - Le meilleur serveur CS2 Retake en France, serveur officiel d'AHNO. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
+    <meta name="keywords" content="Agora Retake, CS2 Retake, serveur CS2, AHNO, AHNO CS, AHNO Counter Strike, Counter-Strike 2, Retake, gaming, skin changer CS2, serveur français CS2">
     <meta name="author" content="AHNO">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="language" content="French">
@@ -28,8 +33,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://agora-retake.fr/">
-    <meta property="og:title" content="Agora Retake - Serveur CS2 Retake | Le Meilleur Serveur Retake de France">
-    <meta property="og:description" content="Agora Retake - Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
+    <meta property="og:title" content="Agora Retake - Le Meilleur Serveur CS2 Retake de France | Serveur d'AHNO">
+    <meta property="og:description" content="Agora Retake - Le meilleur serveur CS2 Retake en France, serveur officiel d'AHNO. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
     <meta property="og:image" content="https://agora-retake.fr/images/logos/logo.webp">
     <meta property="og:site_name" content="Agora Retake">
     <meta property="og:locale" content="fr_FR">
@@ -37,8 +42,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://agora-retake.fr/">
-    <meta name="twitter:title" content="Agora Retake - Serveur CS2 Retake | Le Meilleur Serveur Retake de France">
-    <meta name="twitter:description" content="Agora Retake - Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
+    <meta name="twitter:title" content="Agora Retake - Le Meilleur Serveur CS2 Retake de France | Serveur d'AHNO">
+    <meta name="twitter:description" content="Agora Retake - Le meilleur serveur CS2 Retake en France, serveur officiel d'AHNO. Rejoignez notre communauté et améliorez vos compétences ! Serveur 24/7, anti-cheat VAC Secure, skin changer intégré.">
     <meta name="twitter:image" content="https://agora-retake.fr/images/logos/logo.webp">
     <meta name="twitter:creator" content="@AHNO_fr">
 
@@ -46,55 +51,223 @@
     <link rel="canonical" href="https://agora-retake.fr/">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="images/logos/logo.webp">
+    <link rel="icon" type="image/x-icon" href="/images/logos/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/images/logos/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/logos/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logos/apple-touch-icon.png">
+    <link rel="manifest" href="/images/logos/site.webmanifest">
     
-    <!-- Font Awesome (chargé de manière asynchrone) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
     
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     
-    <!-- Fallback pour Font Awesome -->
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </noscript>
+    <!-- Données structurées pour Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Agora Retake",
+        "url": "https://agora-retake.fr/",
+        "description": "Le meilleur serveur CS2 Retake en France, serveur officiel d'AHNO. Skin changer intégré et communauté active.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://agora-retake.fr/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Comment rejoindre le serveur Agora Retake CS2 ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pour rejoindre le serveur, utilisez la commande console: connect 79.127.196.41:25251;password agora"
+            }
+        }, {
+            "@type": "Question",
+            "name": "Le serveur Agora Retake est-il sécurisé ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, le serveur utilise l'anti-cheat VAC Secure pour garantir une expérience de jeu équitable."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Comment utiliser le skin changer sur Agora Retake ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Visitez notre page skin-changer.agora-retake.fr pour accéder à notre skin changer intégré avec plus de 1000 skins disponibles."
+            }
+        }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Agora Retake",
+        "url": "https://agora-retake.fr",
+        "logo": "https://agora-retake.fr/images/logos/logo.webp",
+        "owner": {
+            "@type": "Person",
+            "name": "AHNO",
+            "url": "https://www.youtube.com/@AHNO-fr",
+            "jobTitle": "YouTubeur CS2"
+        },
+        "sameAs": [
+            "https://discord.gg/uqDBpmRE3m",
+            "https://steamcommunity.com/groups/Agora_fr",
+            "https://www.youtube.com/@AHNO-fr",
+            "https://www.twitch.tv/ahno_fr"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "AHNO",
+        "url": "https://agora-retake.fr",
+        "sameAs": [
+            "https://www.youtube.com/@AHNO-fr",
+            "https://www.twitch.tv/ahno_fr",
+            "https://discord.gg/uqDBpmRE3m",
+            "https://steamcommunity.com/groups/Agora_fr"
+        ],
+        "jobTitle": "YouTubeur CS2",
+        "description": "AHNO est un YouTubeur spécialisé dans Counter-Strike 2 et le créateur d'Agora Retake, le meilleur serveur Retake de France."
+    }
+    </script>
+
+    <!-- Script de gestion des cookies -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptAllBtn = document.getElementById('accept-all-cookies');
+            const acceptNecessaryBtn = document.getElementById('accept-necessary-cookies');
+            const cookiePreferences = document.getElementById('cookie-preferences');
+            const savePreferencesBtn = document.getElementById('save-preferences');
+            
+            // Vérifier si les préférences de cookies ont déjà été enregistrées
+            const savedPreferences = localStorage.getItem('cookiePreferences');
+            if (!savedPreferences) {
+                cookieBanner.style.display = 'flex';
+            } else {
+                cookieBanner.style.display = 'none';
+            }
+            
+            // Gérer l'acceptation de tous les cookies
+            acceptAllBtn.addEventListener('click', function() {
+                const preferences = {
+                    necessary: true,
+                    analytics: true,
+                    marketing: true,
+                    consent: true,
+                    expires: new Date(Date.now() + 24 * 60 * 60 * 1000) // Expire dans 24 heures
+                };
+                localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
+                cookieBanner.style.display = 'none';
+            });
+            
+            // Gérer l'acceptation des cookies nécessaires uniquement
+            acceptNecessaryBtn.addEventListener('click', function() {
+                const preferences = {
+                    necessary: true,
+                    analytics: false,
+                    marketing: false,
+                    consent: true,
+                    expires: new Date(Date.now() + 24 * 60 * 60 * 1000) // Expire dans 24 heures
+                };
+                localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
+                cookieBanner.style.display = 'none';
+            });
+            
+            // Gérer l'ouverture des préférences
+            document.querySelector('.cookie-preferences-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                cookiePreferences.style.display = 'block';
+            });
+            
+            // Gérer la sauvegarde des préférences
+            savePreferencesBtn.addEventListener('click', function() {
+                const preferences = {
+                    necessary: true, // Toujours nécessaire
+                    analytics: document.getElementById('analytics-cookies').checked,
+                    marketing: document.getElementById('marketing-cookies').checked,
+                    consent: true,
+                    expires: new Date(Date.now() + 24 * 60 * 60 * 1000) // Expire dans 24 heures
+                };
+                localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
+                cookieBanner.style.display = 'none';
+            });
+        });
+    </script>
+
+    <!-- Balises pour l'indexation des sections -->
+    <link rel="canonical" href="https://agora-retake.fr/">
+    <meta property="og:url" content="https://agora-retake.fr/">
     
-    <!-- Fallback pour Google Fonts -->
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    </noscript>
+    <!-- Balises pour la section Discord -->
+    <meta property="og:section:discord" content="Rejoignez notre communauté Discord">
+    <meta name="twitter:section:discord" content="Rejoignez notre communauté Discord">
+    
+    <!-- Balises pour la section Skin Changer -->
+    <meta property="og:section:skin-changer" content="Skin Changer CS2 intégré">
+    <meta name="twitter:section:skin-changer" content="Skin Changer CS2 intégré">
+    
+    <!-- Balises pour la section Streamers -->
+    <meta property="og:section:streamers" content="Nos Streamers">
+    <meta name="twitter:section:streamers" content="Nos Streamers">
+    
+    <!-- Balises pour la vidéo YouTube -->
+    <meta property="og:video" content="https://www.youtube.com/@AHNO-fr">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+    <meta name="twitter:player" content="https://www.youtube.com/@AHNO-fr">
+    <meta name="twitter:player:width" content="1280">
+    <meta name="twitter:player:height" content="720">
+
+    <!-- Custom JavaScript -->
+    <script src="js/animations.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="https://agora-retake.fr">
-                    <img src="images/logos/logo.webp" alt="Agora Retake Logo" loading="lazy" width="60" height="60">
+                <a href="https://agora-retake.fr" title="Retour à l'accueil d'Agora Retake">
+                    <img src="images/logos/logo.webp" alt="Logo Agora Retake - Serveur CS2 Retake" title="Logo Agora Retake" loading="lazy" width="60" height="60">
                 </a>
             </div>
-            <button class="mobile-menu-button">
-                <i class="fas fa-bars"></i>
+            <button class="mobile-menu-button" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#serveur">Serveur</a></li>
-                <li><a href="#discord">Discord</a></li>
-                <li><a href="#streamers">Streamers</a></li>
-                <li><a href="#skin-changer">Skin Changer</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil" title="Aller à la section Accueil">Accueil</a></li>
+                <li><a href="#serveur" title="Aller à la section Serveur">Serveur</a></li>
+                <li><a href="#discord" title="Aller à la section Discord">Discord</a></li>
+                <li><a href="#streamers" title="Aller à la section Streamers">Streamers</a></li>
+                <li><a href="#skin-changer" title="Aller à la section Skin Changer">Skin Changer</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="accueil" class="hero">
-            <h1>Bienvenue sur CS2 Retake</h1>
+            <h1>Bienvenue sur Agora-Retake</h1>
             <p>Le meilleur serveur Retake de Counter-Strike 2</p>
             <div class="cta-buttons">
-                <a href="https://skin-changer.agora-retake.fr" class="btn primary">Skin Changer</a>
-                <a href="https://discord.gg/uqDBpmRE3m" class="btn secondary" target="_blank" rel="noopener noreferrer">Rejoindre Discord</a>
+                <a href="https://skin-changer.agora-retake.fr" class="btn primary" title="Accéder au Skin Changer d'Agora Retake">Skin Changer</a>
+                <a href="https://discord.gg/uqDBpmRE3m" class="btn secondary" target="_blank" rel="noopener noreferrer" title="Rejoindre le serveur Discord d'Agora Retake">Rejoindre Discord</a>
             </div>
         </section>
 
@@ -104,7 +277,7 @@
                 <div class="stat-card">
                     <i class="fas fa-users"></i>
                     <h3>Joueurs en ligne</h3>
-                    <p id="playerCount">Chargement...</p>
+                    <a href="https://www.gametracker.com/server_info/79.127.196.41:25251/" target="_blank" rel="noopener noreferrer" title="Voir les statistiques du serveur sur GameTracker"><img src="https://cache.gametracker.com/server_info/79.127.196.41:25251/b_350_20_323957_202743_f19a15_111111.png" border="0" width="350" height="20" alt="Statistiques du serveur CS2 Retake" title="Statistiques du serveur CS2 Retake"/></a>
                 </div>
                 <div class="stat-card">
                     <i class="fas fa-server"></i>
@@ -118,34 +291,48 @@
                 </div>
             </div>
             <div class="server-connect">
-                <button onclick="copyConnectCommand()" class="btn primary">
+                <button onclick="connectToServer()" class="btn primary" title="Se connecter au serveur CS2 Retake">
                     <i class="fas fa-gamepad"></i> Rejoindre le Serveur
                 </button>
-                <button onclick="copyConnectCommand()" class="btn secondary">
+                <button onclick="copyConnectCommand()" class="btn secondary" title="Copier la commande de connexion">
                     <i class="fas fa-copy"></i> Copier la Commande
                 </button>
             </div>
             <div class="server-command">
-                <p>Commande console : <code id="connectCommand">connect 79.127.196.41:25251;password agora</code></p>
+                <p>Commande console : <code id="connectCommand" title="Commande de connexion au serveur">connect 79.127.196.41:25251;password agora</code></p>
             </div>
         </section>
 
-        <section class="discord-section">
-            <h2>Notre Communauté</h2>
+        <section id="discord" class="discord-section" itemscope itemtype="https://schema.org/Organization">
+            <h2 itemprop="name">Notre Communauté</h2>
             <div class="discord-content">
-                <div class="discord-info">
+                <div class="discord-info" itemprop="description">
                     <p>Rejoignez notre communauté Discord pour rester connecté avec les autres joueurs, participer aux événements et recevoir les dernières actualités !</p>
                     <ul class="discord-features">
-                        <li><i class="fas fa-users"></i> Communauté active et bienveillante</li>
-                        <li><i class="fas fa-bullhorn"></i> Annonces en temps réel</li>
-                        <li><i class="fas fa-gamepad"></i> Organisation d'événements</li>
-                        <li><i class="fas fa-gift"></i> Giveaways réguliers</li>
-                        <li><i class="fas fa-headset"></i> Support technique</li>
+                        <li><i class="fas fa-users" title="Communauté active"></i> Communauté active et bienveillante</li>
+                        <li><i class="fas fa-bullhorn" title="Annonces en temps réel"></i> Annonces en temps réel</li>
+                        <li><i class="fas fa-gamepad" title="Événements gaming"></i> Organisation d'événements</li>
+                        <li><i class="fas fa-gift" title="Giveaways"></i> Giveaways réguliers</li>
+                        <li><i class="fas fa-headset" title="Support technique"></i> Support technique</li>
                     </ul>
-                    <a href="https://discord.gg/uqDBpmRE3m" target="_blank" class="discord-join-btn">
-                        <i class="fab fa-discord"></i>
-                        Rejoindre le serveur Discord
-                    </a>
+                    <div class="community-links">
+                        <a href="https://discord.gg/uqDBpmRE3m" target="_blank" rel="noopener noreferrer" class="discord-join-btn" title="Rejoindre notre serveur Discord">
+                            <i class="fab fa-discord"></i>
+                            Rejoindre le serveur Discord
+                        </a>
+                        <a href="https://steamcommunity.com/groups/Agora_fr" target="_blank" rel="noopener noreferrer" class="steam-join-btn" title="Rejoindre notre groupe Steam">
+                            <i class="fab fa-steam"></i>
+                            Rejoindre notre groupe Steam
+                        </a>
+                        <a href="https://leetify.com/app/clubs/join/33c62b7dec74fc4bc38041d2e1696c3b90383ed4" target="_blank" rel="noopener noreferrer" class="leetify-join-btn" title="Rejoindre notre club Leetify">
+                            <i class="fas fa-chart-line"></i>
+                            Rejoindre notre club Leetify
+                        </a>
+                        <a href="https://www.faceit.com/fr/inv/j052XFm" target="_blank" rel="noopener noreferrer" class="faceit-join-btn" title="Rejoindre notre club Faceit">
+                            <i class="fas fa-trophy"></i>
+                            Rejoindre notre club Faceit
+                        </a>
+                    </div>
                 </div>
                 <div class="discord-widget">
                     <iframe 
@@ -153,25 +340,27 @@
                         allowtransparency="true" 
                         frameborder="0"
                         title="Widget Discord de la communauté Agora Retake"
+                        aria-label="Widget Discord de la communauté Agora Retake"
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                     ></iframe>
                 </div>
             </div>
         </section>
 
-        <section id="streamers" class="streamers-section">
-            <h2>Nos Streamers</h2>
+        <section id="streamers" class="streamers-section" itemscope itemtype="https://schema.org/Person">
+            <h2 itemprop="name">Nos Streamers</h2>
             <div class="featured-streamer">
                 <div class="featured-streamer-content">
                     <div class="featured-streamer-info">
-                        <img src="images/streamers/ahno.webp" alt="AHNO YouTube" class="featured-avatar" width="150" height="150" loading="lazy">
+                        <img src="images/streamers/ahno.webp" alt="Photo de profil d'AHNO, créateur du serveur" title="AHNO - Créateur du serveur" class="featured-avatar" width="150" height="150" loading="lazy">
                         <div class="featured-streamer-text">
                             <h3>AHNO</h3>
                             <p class="featured-description">Créateur du serveur Discord et YouTubeur</p>
                             <div class="featured-stats">
-                                <span><i class="fas fa-users"></i> 3K+ Abonnés</span>
-                                <span><i class="fas fa-video"></i> 90+ Vidéos</span>
+                                <span><i class="fas fa-users" title="Abonnés YouTube"></i> 3K+ Abonnés</span>
+                                <span><i class="fas fa-video" title="Vidéos YouTube"></i> 90+ Vidéos</span>
                             </div>
-                            <a href="https://www.youtube.com/@AHNO-fr" class="btn primary" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/@AHNO-fr" class="btn primary" target="_blank" rel="noopener noreferrer" title="S'abonner à la chaîne YouTube d'AHNO">
                                 <i class="fab fa-youtube"></i> S'abonner sur YouTube
                             </a>
                         </div>
@@ -182,8 +371,8 @@
                             <div class="youtube-placeholder">
                                 <div class="loading">Chargement de la dernière vidéo...</div>
                                 <div class="youtube-thumbnail">
-                                    <img src="images/thumbnails/video-thumbnail.jpg" alt="Miniature de la dernière vidéo" loading="lazy">
-                                    <button class="play-button" aria-label="Lire la vidéo">
+                                    <img src="images/thumbnails/video-thumbnail.jpg" alt="Miniature de la dernière vidéo d'AHNO" title="Dernière vidéo d'AHNO" loading="lazy">
+                                    <button class="play-button" aria-label="Lire la vidéo" title="Lire la vidéo">
                                         <i class="fas fa-play"></i>
                                     </button>
                                 </div>
@@ -196,16 +385,16 @@
                 <h3>Autres Streamers</h3>
                 <div class="streamers-grid">
                     <div class="streamer-card">
-                        <img src="images/streamers/neutronbzh.webp" alt="NeuTroNBZh Twitch" width="120" height="120" loading="lazy">
+                        <img src="images/streamers/neutronbzh.webp" alt="Photo de profil de NeuTroNBZh" title="NeuTroNBZh - Streamer sur Twitch" width="120" height="120" loading="lazy">
                         <h3>NeuTroNBZh</h3>
-                        <a href="https://www.twitch.tv/neutronbzh" class="btn" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.twitch.tv/neutronbzh" class="btn" target="_blank" rel="noopener noreferrer" title="Suivre NeuTroNBZh sur Twitch">
                             <i class="fab fa-twitch"></i> Suivre sur Twitch
                         </a>
                     </div>
                     <div class="streamer-card">
-                        <img src="images/streamers/nvsshcs.webp" alt="nvsshcs Twitch" width="120" height="120" loading="lazy">
+                        <img src="images/streamers/nvsshcs.webp" alt="Photo de profil de nvsshcs" title="nvsshcs - Streamer sur Twitch" width="120" height="120" loading="lazy">
                         <h3>nvsshcs</h3>
-                        <a href="https://www.twitch.tv/nvsshcs" class="btn" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.twitch.tv/nvsshcs" class="btn" target="_blank" rel="noopener noreferrer" title="Suivre nvsshcs sur Twitch">
                             <i class="fab fa-twitch"></i> Suivre sur Twitch
                         </a>
                     </div>
@@ -213,66 +402,127 @@
             </div>
         </section>
 
-        <section id="skin-changer" class="skin-changer-section">
+        <section id="skin-changer" class="skin-changer-section" itemscope itemtype="https://schema.org/SoftwareApplication">
             <div class="skin-changer-content">
                 <div class="skin-changer-text">
-                    <h2>Skin Changer</h2>
-                    <p>Personnalisez votre expérience CS2 avec notre Skin Changer intégré</p>
+                    <h2 itemprop="name">Skin Changer</h2>
+                    <p itemprop="description">Personnalisez votre expérience CS2 avec notre Skin Changer intégré</p>
                     <ul class="skin-features">
-                        <li><i class="fas fa-check"></i> Plus de 1000 skins disponibles</li>
-                        <li><i class="fas fa-check"></i> Interface intuitive</li>
-                        <li><i class="fas fa-check"></i> Mise à jour régulière</li>
+                        <li><i class="fas fa-check" title="Skins disponibles"></i> Plus de 1000 skins disponibles</li>
+                        <li><i class="fas fa-check" title="Interface intuitive"></i> Interface intuitive</li>
+                        <li><i class="fas fa-check" title="Mises à jour régulières"></i> Mise à jour régulière</li>
                     </ul>
-                    <a href="https://skin-changer.agora-retake.fr" class="btn primary">
+                    <a href="https://skin-changer.agora-retake.fr" class="btn primary" title="Accéder au Skin Changer d'Agora Retake">
                         <i class="fas fa-paint-brush"></i> Accéder au Skin Changer
                     </a>
                 </div>
                 <div class="skin-changer-preview">
-                    <img src="images/skins/skin-preview.webp" alt="Aperçu du Skin Changer" width="600" height="400" loading="lazy">
+                    <img src="images/skins/skin-preview.webp" alt="Interface du Skin Changer d'Agora Retake" title="Aperçu du Skin Changer" width="600" height="400" loading="lazy">
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Bannière de cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <h2>Gestion des cookies</h2>
+            <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. Certains cookies sont nécessaires au fonctionnement du site, tandis que d'autres nous aident à comprendre comment vous interagissez avec celui-ci.</p>
+            <div class="cookie-options">
+                <button id="accept-all-cookies" class="btn primary">Tout accepter</button>
+                <button id="accept-necessary-cookies" class="btn secondary">Nécessaires uniquement</button>
+                <a href="#" class="cookie-preferences-link">Personnaliser mes préférences</a>
+            </div>
+        </div>
+        <div id="cookie-preferences" class="cookie-preferences">
+            <h3>Préférences de cookies</h3>
+            <div class="preference-option">
+                <label>
+                    <input type="checkbox" id="analytics-cookies" checked>
+                    Cookies analytiques
+                </label>
+                <p>Ces cookies nous permettent de comprendre comment les visiteurs interagissent avec notre site.</p>
+            </div>
+            <div class="preference-option">
+                <label>
+                    <input type="checkbox" id="marketing-cookies" checked>
+                    Cookies marketing
+                </label>
+                <p>Ces cookies sont utilisés pour vous montrer des publicités pertinentes.</p>
+            </div>
+            <button id="save-preferences" class="btn primary">Enregistrer mes préférences</button>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>À propos d'Agora Retake</h3>
-                <p>Le meilleur serveur CS2 Retake en France. Rejoignez notre communauté et améliorez vos compétences !</p>
-            </div>
-            <div class="footer-section">
-                <h3>Liens Rapides</h3>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#serveur">Serveur</a></li>
-                    <li><a href="#discord">Discord</a></li>
-                    <li><a href="#streamers">Streamers</a></li>
+                <p>Fondé en 2023, Agora Retake est devenu le serveur de référence pour la communauté CS2 française. Notre mission est de fournir une expérience de jeu optimale avec :</p>
+                <ul class="footer-features">
+                    <li><i class="fas fa-check" title="Performance serveur"></i> Serveur haute performance SubTick</li>
+                    <li><i class="fas fa-shield-alt" title="Protection anti-cheat"></i> Protection anti-cheat avancée</li>
+                    <li><i class="fas fa-users" title="Communauté active"></i> Communauté active et bienveillante</li>
+                    <li><i class="fas fa-headset" title="Support technique"></i> Support technique 24/7</li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Suivez-nous</h3>
-                <div class="social-links">
-                    <a href="https://discord.gg/uqDBpmRE3m" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-discord"></i>
-                        <span>Rejoindre notre Discord</span>
-                    </a>
-                    <a href="https://www.twitch.tv/ahno_fr" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-twitch"></i>
-                        <span>Suivre sur Twitch</span>
-                    </a>
-                    <a href="https://www.youtube.com/@AHNO-fr" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-youtube"></i>
-                        <span>S'abonner sur YouTube</span>
-                    </a>
+                <h3>Navigation Rapide</h3>
+                <div class="footer-nav-grid">
+                    <div class="footer-nav-column">
+                        <h4>Serveur</h4>
+                        <ul>
+                            <li><a href="#serveur" title="État du Serveur">État du Serveur</a></li>
+                            <li><a href="#serveur" title="Comment Rejoindre">Comment Rejoindre</a></li>
+                            <li><a href="#serveur" title="Règles du Serveur">Règles du Serveur</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Communauté</h4>
+                        <ul>
+                            <li><a href="#discord" title="Discord">Discord</a></li>
+                            <li><a href="#streamers" title="Streamers">Streamers</a></li>
+                            <li><a href="#skin-changer" title="Skin Changer">Skin Changer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Nous Contacter</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope" title="Email de support"></i> support@agora-retake.fr</p>
+                    <p><i class="fab fa-discord" title="Support Discord"></i> Support Discord 24/7</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Rejoignez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://discord.gg/uqDBpmRE3m" target="_blank" rel="noopener noreferrer" title="Rejoindre le serveur Discord d'Agora Retake">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+                        <a href="https://steamcommunity.com/groups/Agora_fr" target="_blank" rel="noopener noreferrer" title="Rejoindre notre groupe Steam">
+                            <i class="fab fa-steam"></i>
+                            <span>Steam</span>
+                        </a>
+                        <a href="https://www.youtube.com/@AHNO-fr" target="_blank" rel="noopener noreferrer" title="S'abonner à la chaîne YouTube d'AHNO">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Agora-Retake. Tous droits réservés.</p>
+            <nav class="footer-legal">
+                <a href="/mentions-legales.html" title="Mentions Légales">Mentions Légales</a>
+                <a href="/confidentialite.html" title="Politique de Confidentialité">Politique de Confidentialité</a>
+                <a href="/cgv.html" title="Conditions Générales de Vente">CGV</a>
+            </nav>
         </div>
     </footer>
 
-    <!-- Scripts chargés de manière asynchrone -->
+    <!-- Scripts -->
     <script src="js/main.js" defer></script>
 </body>
 </html> 

@@ -111,20 +111,85 @@ async function updatePlayerCount() {
     }
 }
 
-// Fonction pour copier la commande avec feedback visuel
+// Fonction pour copier la commande de connexion
 function copyConnectCommand() {
-    const command = connectCommandElement.textContent;
+    const command = document.getElementById('connectCommand').textContent;
     navigator.clipboard.writeText(command).then(() => {
-        const button = document.querySelector('.server-connect .btn.secondary');
-        const originalText = button.innerHTML;
-        button.innerHTML = '<i class="fas fa-check"></i> Copié !';
+        // Créer et afficher une notification
+        const notification = document.createElement('div');
+        notification.className = 'notification';
+        notification.textContent = 'Commande copiée dans le presse-papiers !';
+        document.body.appendChild(notification);
+        
+        // Supprimer la notification après 3 secondes
         setTimeout(() => {
-            button.innerHTML = originalText;
-        }, 2000);
+            notification.remove();
+        }, 3000);
     }).catch(err => {
-        console.error('Erreur lors de la copie:', err);
+        console.error('Erreur lors de la copie : ', err);
     });
 }
+
+// Fonction pour se connecter au serveur
+function connectToServer() {
+    const command = document.getElementById('connectCommand').textContent;
+    // Copier la commande dans le presse-papiers
+    navigator.clipboard.writeText(command).then(() => {
+        // Lancer CS2 avec la commande
+        window.location.href = 'steam://connect/79.127.196.41:25251;password agora';
+        
+        // Créer et afficher une notification
+        const notification = document.createElement('div');
+        notification.className = 'notification';
+        notification.innerHTML = `
+            <p>La commande a été copiée dans votre presse-papiers.</p>
+            <p>1. Lancez CS2</p>
+            <p>2. Appuyez sur ~ pour ouvrir la console</p>
+            <p>3. Collez la commande (Ctrl+V)</p>
+        `;
+        document.body.appendChild(notification);
+        
+        // Supprimer la notification après 5 secondes
+        setTimeout(() => {
+            notification.remove();
+        }, 10000);
+    }).catch(err => {
+        console.error('Erreur lors de la connexion : ', err);
+    });
+}
+
+// Ajouter les styles pour les notifications
+const style = document.createElement('style');
+style.textContent = `
+    .notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 15px;
+        background-color: #2ecc71;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+        animation: slideIn 0.3s ease-out;
+    }
+
+    .notification p {
+        margin: 5px 0;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+`;
+document.head.appendChild(style);
 
 // Fonction pour charger la dernière vidéo YouTube avec gestion d'erreur
 async function loadLatestVideo() {

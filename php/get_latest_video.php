@@ -1,5 +1,7 @@
 <?php
 header('Content-Type: application/json');
+header('Cache-Control: max-age=86400, must-revalidate'); // Cache pour 24 heures
+header('Expires: ' . gmdate('D, d M Y H:i:s \G\M\T', time() + 86400)); // Expire dans 24 heures
 
 // Remplacez par votre clé API YouTube
 $api_key = 'AIzaSyAcBxWMsTsCnJ6rmCI7KWDv8U7I6vJx-W8';

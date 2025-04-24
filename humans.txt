@@ -1,0 +1,17 @@
+/* TEAM */
+Développeur: Louis Cerclé
+Site: https://agora-retake.fr
+Github: https://github.com/NeuTroNBZh
+Location: France
+
+/* THANKS */
+Merci à:
+- La communauté open source
+- Les développeurs qui partagent leur savoir
+- Le café qui nous maintient éveillés
+- Les chats qui nous distraient pendant le développement
+
+/* SITE */
+Standards: HTML5, CSS3, JavaScript
+Components: PHP, MySQL
+Software: Visual Studio Code, Git 

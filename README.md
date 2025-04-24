@@ -1,11 +1,10 @@
-
 # CS2 Retake - Site Vitrine
 
 Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant des fonctionnalités pour le Skin Changer, la communauté Discord et les streamers associés.
 
 ## 🚀 Démo
 
-[Voir la démo en ligne](https://agora-retake.fr)
+[Voir la démo en ligne](https://NeuTroNBZh.github.io/Agora2.0)
 
 ## 📋 Table des matières
 
@@ -15,10 +14,7 @@ Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant de
 - [Installation](#installation)
 - [Fonctionnalités](#fonctionnalités)
 - [Technologies Utilisées](#technologies-utilisées)
-- [Crédits & Ressources Utilisées](#crédits--ressources-utilisées)
 - [Support](#support)
-- [Licence](#licence)
-- [Contribution](#contribution)
 
 ## Structure du Projet
 
@@ -40,22 +36,30 @@ Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant de
 ## Images Requises
 
 ### Logo du Serveur (logo.png)
+- **Titre** : Logo CS2 Retake
 - Format : PNG avec fond transparent
 - Taille recommandée : 200x50 pixels
 - Style : Logo du serveur CS2 Retake
 
 ### Image de Fond (hero-bg.jpg)
+- **Titre** : Arrière-plan CS2 Retake
 - Format : JPG
 - Taille recommandée : 1920x1080 pixels
 - Style : Image de fond représentant CS2 ou le mode Retake
 
 ### Logos des Plateformes
-- twitch-logo.png : Logo officiel Twitch
-- youtube-logo.png : Logo officiel YouTube
-- Format : PNG avec fond transparent
-- Taille recommandée : 100x100 pixels
+- **Titre** : Logo Twitch
+  - twitch-logo.png : Logo officiel Twitch
+  - Format : PNG avec fond transparent
+  - Taille recommandée : 100x100 pixels
+
+- **Titre** : Logo YouTube
+  - youtube-logo.png : Logo officiel YouTube
+  - Format : PNG avec fond transparent
+  - Taille recommandée : 100x100 pixels
 
 ### Aperçu du Skin Changer (skin-preview.png)
+- **Titre** : Interface Skin Changer
 - Format : PNG
 - Taille recommandée : 800x600 pixels
 - Style : Capture d'écran ou mockup du Skin Changer
@@ -84,8 +88,8 @@ Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant de
 
 1. Clonez ce dépôt
 ```bash
-git clone https://github.com/NeuTroNBZh/Agora2.0.git
-cd Agora2.0
+git clone https://github.com/votre-username/cs2-retake-site.git
+cd cs2-retake-site
 ```
 
 2. Ajoutez toutes les images requises dans le dossier `images/`
@@ -117,16 +121,6 @@ cd Agora2.0
 - JavaScript (vanilla)
 - Font Awesome pour les icônes
 
-## 📦 Crédits & Ressources Utilisées
-
-Ce projet utilise et intègre des ressources issues de deux autres dépôts GitHub, que nous remercions chaleureusement :
-
-- [**CS2-WeaponPaints-Website**](https://github.com/LielXD/CS2-WeaponPaints-Website) par [LielXD](https://github.com/LielXD) :
-  Ce site fournit l’interface web permettant aux joueurs de personnaliser les skins de leurs armes CS2. Il sert de base à la section Skin Changer de ce projet.
-
-- [**cs2-WeaponPaints**](https://github.com/Nereziel/cs2-WeaponPaints) par [Nereziel](https://github.com/Nereziel) :
-  Ce plugin permet l'application des skins personnalisés directement dans CS2. Le projet web de LielXD utilise ce plugin, et nous avons repris cette intégration dans notre propre site vitrine.
-
 ## Support
 
 Pour toute question ou problème, veuillez ouvrir une issue dans ce dépôt.
@@ -142,4 +136,4 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
 3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
+5. Ouvrir une Pull Request 
