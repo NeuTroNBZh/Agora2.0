@@ -4,7 +4,7 @@ Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant de
 
 ## 🚀 Démo
 
-[Voir la démo en ligne](https://NeuTroNBZh.github.io/Agora2.0)
+[Voir la démo en ligne](https://agora-retake.fr)
 
 ## 📋 Table des matières
 
