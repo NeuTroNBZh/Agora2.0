@@ -1,139 +1,127 @@
-# CS2 Retake - Site Vitrine
+# Agora 2.0 - Plateforme CS2 Retake
 
-Ce site web est une vitrine pour un serveur Retake Counter-Strike 2, incluant des fonctionnalités pour le Skin Changer, la communauté Discord et les streamers associés.
+Agora 2.0 est une plateforme communautaire complète pour les serveurs CS2 Retake, offrant des fonctionnalités avancées pour les joueurs, les streamers et les administrateurs.
 
-## 🚀 Démo
+## 🚀 Fonctionnalités principales
 
-[Voir la démo en ligne](https://NeuTroNBZh.github.io/Agora2.0)
+- **🎮 Mode Retake**
+  - Interface dédiée
+  - Statistiques en temps réel
+  - Système de classement
+  - Matchmaking intelligent
 
-## 📋 Table des matières
+- **🎨 Skin Changer**
+  - Interface intuitive
+  - Prévisualisation en temps réel
+  - Bibliothèque de skins étendue
+  - Synchronisation avec le jeu
 
-- [Structure du Projet](#structure-du-projet)
-- [Images Requises](#images-requises)
-- [Personnalisation](#personnalisation)
-- [Installation](#installation)
-- [Fonctionnalités](#fonctionnalités)
-- [Technologies Utilisées](#technologies-utilisées)
-- [Support](#support)
+- **📺 Intégration Streamers**
+  - Widgets Twitch et YouTube
+  - Notifications en direct
+  - Statistiques de stream
+  - Interface dédiée
 
-## Structure du Projet
+- **💬 Communauté**
+  - Intégration Discord complète
+  - Système de rangs et récompenses
+  - Forums et discussions
+  - Événements communautaires
 
-```
-.
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-└── images/
-    ├── logo.png           # Logo du serveur CS2 Retake
-    ├── hero-bg.jpg        # Image de fond pour la section héro
-    ├── twitch-logo.png    # Logo Twitch pour la section streamers
-    ├── youtube-logo.png   # Logo YouTube pour la section streamers
-    └── skin-preview.png   # Aperçu du Skin Changer
-```
+## 📚 Documentation
 
-## Images Requises
+Consultez notre [Wiki](wiki/README.md) pour une documentation complète :
 
-### Logo du Serveur (logo.png)
-- **Titre** : Logo CS2 Retake
-- Format : PNG avec fond transparent
-- Taille recommandée : 200x50 pixels
-- Style : Logo du serveur CS2 Retake
+1. [Introduction](wiki/introduction.md)
+2. [Installation](wiki/installation.md)
+3. [Configuration](wiki/configuration.md)
+4. [Personnalisation](wiki/personnalisation.md)
+5. [Sécurité](wiki/securite.md)
+6. [API et Intégrations](wiki/api.md)
+7. [Dépannage](wiki/depannage.md)
+8. [Contribution](wiki/contribution.md)
 
-### Image de Fond (hero-bg.jpg)
-- **Titre** : Arrière-plan CS2 Retake
-- Format : JPG
-- Taille recommandée : 1920x1080 pixels
-- Style : Image de fond représentant CS2 ou le mode Retake
+## 🛠️ Installation
 
-### Logos des Plateformes
-- **Titre** : Logo Twitch
-  - twitch-logo.png : Logo officiel Twitch
-  - Format : PNG avec fond transparent
-  - Taille recommandée : 100x100 pixels
+### Prérequis
+- Serveur web (Apache recommandé)
+- PHP 7.4 ou supérieur
+- MySQL 5.7 ou supérieur
+- Compte GitHub
+- Accès SSH (pour le déploiement)
 
-- **Titre** : Logo YouTube
-  - youtube-logo.png : Logo officiel YouTube
-  - Format : PNG avec fond transparent
-  - Taille recommandée : 100x100 pixels
-
-### Aperçu du Skin Changer (skin-preview.png)
-- **Titre** : Interface Skin Changer
-- Format : PNG
-- Taille recommandée : 800x600 pixels
-- Style : Capture d'écran ou mockup du Skin Changer
-
-## Personnalisation
-
-### 1. Images
-- Placez toutes les images dans le dossier `images/`
-- Assurez-vous que les noms des fichiers correspondent exactement à ceux listés ci-dessus
-- Optimisez les images pour le web (taille et qualité)
-
-### 2. Discord
-- Remplacez `VOTRE_ID_DISCORD` dans `index.html` par l'ID de votre serveur Discord
-- Pour obtenir l'ID de votre serveur Discord :
-  1. Activez le mode développeur dans Discord (Paramètres > Apparence > Mode développeur)
-  2. Clic droit sur votre serveur > Copier l'ID
-
-### 3. Streamers
-- Modifiez les sections des streamers dans `index.html` avec les informations de vos streamers
-- Ajoutez les liens vers leurs chaînes Twitch et YouTube
-
-### 4. Skin Changer
-- Ajoutez le lien de téléchargement de votre Skin Changer dans la section correspondante
-
-## Installation
-
-1. Clonez ce dépôt
+### Installation locale
 ```bash
-git clone https://github.com/votre-username/cs2-retake-site.git
-cd cs2-retake-site
+# Cloner le dépôt
+git clone https://github.com/NeuTroNBZh/Agora2.0.git
+cd Agora2.0
+
+# Installer les dépendances
+composer install
+npm install
+
+# Configurer l'environnement
+cp .env.example .env
+php artisan key:generate
 ```
 
-2. Ajoutez toutes les images requises dans le dossier `images/`
-3. Ouvrez `index.html` dans votre navigateur
-4. Pour un déploiement en production, utilisez GitHub Pages ou un serveur web (Apache, Nginx, etc.)
+### Déploiement
+```bash
+# Production
+composer install --no-dev
+npm run build
 
-## Déploiement sur GitHub Pages
+# GitHub Pages
+git checkout -b gh-pages
+git push origin gh-pages
+```
 
-1. Créez un nouveau dépôt sur GitHub
-2. Poussez votre code vers le dépôt
-3. Allez dans les paramètres du dépôt > Pages
-4. Sélectionnez la branche `main` comme source
-5. Votre site sera accessible à l'adresse : `https://votre-username.github.io/cs2-retake-site`
+## 🔧 Configuration
 
-## Fonctionnalités
+### Discord
+1. Créez une application sur le [Portail des développeurs Discord](https://discord.com/developers/applications)
+2. Configurez le bot avec les intents nécessaires
+3. Ajoutez les URLs de redirection
 
-- Design responsive
-- Animations au scroll
-- Menu mobile
-- Intégration Discord
-- Sections pour les streamers
-- Section Skin Changer
-- Navigation fluide
+### Streamers
+1. Configurez les applications Twitch et YouTube
+2. Ajoutez les identifiants dans la configuration
+3. Configurez les widgets
 
-## Technologies Utilisées
+### Skin Changer
+1. Installez le plugin sur votre serveur CS2
+2. Configurez l'API
+3. Ajoutez vos skins personnalisés
 
-- HTML5
-- CSS3 (avec variables CSS)
-- JavaScript (vanilla)
-- Font Awesome pour les icônes
+## 🤝 Contribution
 
-## Support
+Les contributions sont les bienvenues ! Consultez notre [guide de contribution](wiki/contribution.md) pour plus d'informations.
 
-Pour toute question ou problème, veuillez ouvrir une issue dans ce dépôt.
+1. Fork le projet
+2. Créez une branche (`git checkout -b feature/AmazingFeature`)
+3. Commit vos changements (`git commit -m 'feat: Add AmazingFeature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
+
+## 📞 Support
+
+Si vous avez besoin d'aide :
+- Consultez la [FAQ](wiki/depannage.md#faq)
+- Rejoignez notre [Discord](https://discord.gg/uqDBpmRE3m)
+- Ouvrez une [issue](https://github.com/NeuTroNBZh/Agora2.0/issues)
 
 ## 📝 Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
-## 🤝 Contribution
+## 🙏 Remerciements
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request 
+Ce projet utilise des ressources de la communauté :
+- [CS2-WeaponPaints-Website](https://github.com/LielXD/CS2-WeaponPaints-Website)
+- [cs2-WeaponPaints](https://github.com/Nereziel/cs2-WeaponPaints)
+
+---
+
+<div align="center">
+  <sub>Dernière mise à jour : 24/04/2025</sub>
+</div> 
